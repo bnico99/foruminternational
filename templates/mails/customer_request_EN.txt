@@ -1,0 +1,19 @@
+{% if customer.title == 'Herr' %}
+Dear Mr. {{ customer.last_name }},
+{% else %}
+Dear Mrs./Ms. {{ customer.last_name }},
+{% endif %}
+
+Thank you for your request to book the FORUM International.
+Please keep in mind that your booking is without commitment.
+Our staff will contact you again, if everything is alright.
+
+Your request:
+
+Begin: {{ start_datetime }}
+End: {{ end_datetime }}
+Occasion: {{ occasion }}
+
+Kind regards,
+das FORUM International-Team
+

@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-21 21:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/base_layout.html:56
+msgid "Informationen"
+msgstr "Information"
+
+#: templates/base_layout.html:58
+msgid "Mieten"
+msgstr "Book"
+
+#: templates/base_layout.html:61
+msgid "Mein Account"
+msgstr "My Account"
+
+#: templates/base_layout.html:69
+msgid "Abmelden"
+msgstr "Logout"
+
+#: templates/base_layout.html:71 templates/registration/login.html:7
+#: templates/registration/login.html:12
+msgid "Anmelden"
+msgstr "Login"
+
+#: templates/base_layout.html:140 templates/base_layout.html:164
+msgid "Telefon:"
+msgstr "Phone:"
+
+#: templates/base_layout.html:141 templates/base_layout.html:166
+msgid "Fax:"
+msgstr "Fax:"
+
+#: templates/base_layout.html:184
+msgid ""
+"Das Studentenwerk im Beispiel e.V. ist jetzt auch bei Facebook und Instagram "
+"zu finden."
+msgstr "The Studentenwerk is also on Facebook and Instagram."
+
+#: templates/registration/login.html:14
+msgid "Sie haben noch keinen Account?"
+msgstr "Don't have an account yet?"
+
+#: templates/registration/login.html:15
+msgid "Hier geht es zur Registrierung"
+msgstr "Register here"
+
+#~ msgid "FORUM international"
+#~ msgstr "FORUM international"

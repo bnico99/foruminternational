@@ -1,0 +1,17 @@
+{% extends 'base_layout.html' %}
+{% load i18n %}
+
+
+{% block content %}
+    <h1 style="text-align:center;"> {% blocktrans %} Stornierung erfolgreich {%  endblocktrans %}</h1>
+
+    <br>
+    <div style="text-align: center;">
+        <div style="display: inline-block; text-align: left;">
+            {% blocktrans %} Sie erhalten Ihre Stornierungsbestätigung per E-Mail an:  {% endblocktrans %} {{ user.email }}.<br>
+            {% blocktrans %}Bei weiteren Fragen wenden Sie sich bitte an: {% endblocktrans %} <a href="mailto:info@example.com">info@example.com</a>.
+            {% blocktrans %}Hier gehts zurück: {% endblocktrans %} <a href="{% url 'myaccount_edit' %}"> {% blocktrans %} Mein Account {% endblocktrans %}</a>  <br>
+        </div>
+    </div>
+
+{% endblock %}

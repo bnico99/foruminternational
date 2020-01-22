@@ -1,0 +1,33 @@
+{% extends 'base_layout.html' %}
+{% load i18n %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+
+        <p>{% trans "Meine Buchungen:" %} </p>
+        {% if event %}
+            {% for entry in event %}
+                <p>
+                <li>{{ entry.date }}:{{ entry.start_time }} </li>
+                </p>
+            {% endfor %}
+        {% else %}
+            <p>{% trans "Keine Buchungen." %}"</p>
+        {% endif %}
+
+
+        {% trans "Ihre Nutzerdaten:" %}
+        {% trans "Benutzername:" %} {{ user.get_username }}
+        {% trans "Vorname:" %}      {{ request.user.first_name }}
+        {% trans "Nachname:" %} {{ request.user.last_name }}
+        {% trans "Geburtsdatum:" %} {{ request.user.profile.date_of_birth }}
+        {% trans "E-mail:" %} {{ request.user.email }}
+        {% trans "Adresse:" %} {{ request.user.profile.zip_code }} {{ request.user.profile.city }}
+        {{ request.user.profile.street }} {{ request.user.profile.house_number }}
+        {% trans "Telefon:" %} {{ request.user.profile.phone }}
+        <a href="myaccount_edit" class=""> {% trans "bearbeiten" %} </a>
+
+    {% else %}
+       {%  trans "Bitte melden Sie sich an um ihren Account zu sehen." %}
+    {% endif %}
+{% endblock %}

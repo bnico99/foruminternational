@@ -1,0 +1,7 @@
+<h1>FAQ Entry {{ entry.id }}</h1>
+{% load i18n %}
+<h2>{%  trans "Frage:" %}</h2>
+<p>{{ entry.question_text|linebreaks }}</p>
+
+<h2>{%  trans "Antwort:" %} </h2>
+<p>{{ entry.answer_text|linebreaks }}</p>

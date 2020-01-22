@@ -1,0 +1,14 @@
+{% extends 'base_layout.html' %}
+{% load i18n %}
+
+
+{% block content %}
+
+    <div style="text-align: center;">
+        <div style="display: inline-block; text-align: left;">
+            {% blocktrans %} Ihr Account wurde erfolgreich aktiviert. {% endblocktrans %} <br>
+            <a href="{% url 'login' %}"> {% blocktrans %} Hier geht es zur Anmeldung. {% endblocktrans %}</a>
+        </div>
+    </div>
+
+{% endblock %}

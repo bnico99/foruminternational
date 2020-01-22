@@ -1,0 +1,16 @@
+{% if customer.title == 'Herr' %}
+Sehr geehrter Herr {{ customer.last_name }},
+{% else %}
+Sehr geehrte Frau {{ customer.last_name }},
+{% endif %}
+
+wir freuen uns Sie darüber informieren zu können, dass wir den von Ihnen unterschriebenen Vertrag erhalten haben und die Miete bezahlt worden ist.
+
+Hier sind noch einmal Ihre wichtigsten Buchungsinformationen auf einen Blick:
+
+Beginn: {{ start_datetime }}
+Ende: {{ end_datetime }}
+Anlass: {{ occasion }}
+
+Mit freundlichen Grüßen,
+das FORUM International-Team

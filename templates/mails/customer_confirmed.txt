@@ -1,0 +1,27 @@
+{% if customer.title == 'Herr' %}
+Sehr geehrter Herr {{ customer.last_name }},
+{% else %}
+Sehr geehrte Frau {{ customer.last_name }},
+{% endif %}
+
+herzlichen Dank für Ihre Buchung des FORUM International.
+Hiermit bestätigen wir Ihre Buchung.
+
+Anbei senden wir Ihnen den dazugehörigen Vertrag und die Rechnung. Bitte schicken Sie uns den Vertrag spätestens bis zum {{ return_date }} an folgende Adresse unterschrieben zurück:
+    Zentrale des Beispiels im Saarland e. V.
+    Campus Beispiel
+    Gebäude Z1.1
+    12345 Beispiel
+
+Sie können den Vertrag gerne auch per Fax (01234/56789) oder per E-Mail (info@example.com) an uns senden.
+
+Wir werden Sie innerhalb der nächsten Tagen kontaktieren, um einen Termin für die Schlüsselübergabe zu vereinbaren.
+
+Hier sind noch einmal Ihre wichtigsten Buchungsinformationen auf einen Blick:
+
+Beginn: {{ start_datetime }}
+Ende: {{ end_datetime }}
+Anlass: {{ occasion }}
+
+Mit freundlichen Grüßen,
+das FORUM International-Team

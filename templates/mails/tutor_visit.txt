@@ -1,0 +1,10 @@
+Lieber Tutor,
+
+bitte kontaktierte folgenden Kunden, um einen Besichtigungstermin zu vereinbaren:
+
+Vorname: {{ customer.first_name }}
+Nachname: {{ customer.last_name }}
+E-Mail: {{ customer.email }}
+
+Liebe Grüße,
+FORUM International-Team

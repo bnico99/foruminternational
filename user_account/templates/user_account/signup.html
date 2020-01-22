@@ -1,0 +1,27 @@
+{% extends 'base_layout.html' %}
+{% load i18n %}
+
+
+{% block content %}
+<h2>{% trans "Registrierung" %}</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.non_field_errors }}
+  {% for field in form %}
+    <p>
+      {{ field.label_tag }}<br>
+      {{ field }}
+      {% if field.help_text %}
+        <small style="color: grey">{{ field.help_text }}</small>
+      {% endif %}
+      {% for error in field.errors %}
+        <p style="color: red">{{ error }}</p>
+      {% endfor %}
+    </p>
+  {% endfor %}
+  <br>
+
+  <button type="submit">{% trans "Registrieren"%}</button>
+</form>
+
+{% endblock %}

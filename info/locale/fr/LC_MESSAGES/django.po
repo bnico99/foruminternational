@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-21 21:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: info/templates/info/detail.html:3
+msgid "Frage:"
+msgstr ""
+
+#: info/templates/info/detail.html:6
+msgid "Antwort:"
+msgstr ""
+
+#: info/templates/info/faq.html:14
+msgid "Keine Fragen."
+msgstr ""
+
+#: info/templates/info/faq.html:24
+msgid ""
+" Sind Sie sich sicher, dass Sie eine Besichtigung anfragen möchten? Wir "
+"werden uns dann per Mail mit Ihnen in Verbindung setzen."
+msgstr ""
+
+#: info/templates/info/faq.html:26
+msgid "JA"
+msgstr ""
+
+#: info/templates/info/faq.html:27
+msgid "Abbrechen"
+msgstr ""
+
+#: info/templates/info/faq.html:29
+msgid " Möchten Sie einen Termin zur Raumbesichtigung vereinbaren? "
+msgstr ""
+
+#: info/templates/info/faq.html:30
+msgid "Besichtigungstermin anfragen"
+msgstr ""
+
+#: info/templates/info/faq.html:37
+msgid ""
+"Unter der Woche stehen Ihnen folgende Möglichkeiten zur Verfügung. Alle "
+"Preise sind in Euro gegeben."
+msgstr ""
+
+#: info/templates/info/faq.html:40 info/templates/info/faq.html:92
+msgid "Dauer"
+msgstr ""
+
+#: info/templates/info/faq.html:41
+msgid "Unter der Woche (Mo, Di, Mi, Do, Fr)"
+msgstr ""
+
+#: info/templates/info/faq.html:48 info/templates/info/faq.html:100
+msgid "Student"
+msgstr ""
+
+#: info/templates/info/faq.html:49 info/templates/info/faq.html:101
+msgid "kein Student"
+msgstr ""
+
+#: info/templates/info/faq.html:55 info/templates/info/faq.html:57
+msgid "unter 50"
+msgstr ""
+
+#: info/templates/info/faq.html:56 info/templates/info/faq.html:58
+msgid "über 50"
+msgstr ""
+
+#: info/templates/info/faq.html:62
+msgid "bis 3 Stunden"
+msgstr ""
+
+#: info/templates/info/faq.html:70
+msgid "bis 6 Stunden"
+msgstr ""
+
+#: info/templates/info/faq.html:78 info/templates/info/faq.html:106
+msgid "bis 12 Stunden"
+msgstr ""
+
+#: info/templates/info/faq.html:89
+msgid ""
+"Am Wochenende stehen Ihnen folgende Möglichkeiten zur Verfügung. Alle Preise "
+"sind in Euro gegeben."
+msgstr ""
+
+#: info/templates/info/faq.html:93
+msgid "Am Wochenende (Sa, So)"
+msgstr ""
+
+#: info/templates/info/faq.html:113
+msgid "bis 24 Stunden"
+msgstr ""
+
+#: info/templates/info/faq.html:123
+#, python-format
+msgid ""
+" Bitte beachten Sie, dass unter der Woche bei Buchungen, die nach 22 Uhr "
+"enden, zusätzlich %(t1)s € Reinigungsgebühr anfällt und dass am Wochenende "
+"grundsätzlich eine Endreinigungsgebühr in Höhe von %(c1)s € (Student) bzw. "
+"%(c2)s € (sonst) anfällt. "
+msgstr ""
+
+#: info/templates/info/home.html:4
+msgid "Willkommen beim FORUM international!"
+msgstr ""
+
+#: info/templates/info/index.html:3
+msgid "{{ home.title }}"
+msgstr ""
+
+#: info/templates/info/request_visit.html:6
+msgid " Besichtigung angefordert "
+msgstr ""
+
+#: info/templates/info/request_visit.html:11
+msgid ""
+" Sie haben eine Besichtigung angefragt. Wir werden uns in Kürze per Mail mit "
+"Ihnen in Verbindung setzen. "
+msgstr ""
+
+#: info/templates/info/request_visit.html:12
+msgid " Bei weiteren Fragen wenden Sie sich bitte an: "
+msgstr ""
+
+#: info/templates/info/request_visit.html:13
+msgid " Hier gehts zurück:"
+msgstr ""

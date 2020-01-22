@@ -1,0 +1,6 @@
+Lieber Hausmeister,
+
+der Kühlraum des FORUM International wird am {{ date }} ab {{ time }} Uhr benötigt.
+
+Liebe Grüße,
+FORUM International-Team

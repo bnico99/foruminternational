@@ -1,0 +1,80 @@
+{% extends "base_layout.html" %}
+{% load i18n %}
+
+{% block javascript %}
+    <script>
+        document.getElementById("validate_number_people").style.display = "none";
+        document.getElementById("text_after_calculation").style.display = "none";
+
+        calculate = function () {
+            document.getElementById("info_calc_price").style.display = "none";
+            var number_people = $("#id_number_people").val();
+            if (number_people.length == 0) {
+               document.getElementById("validate_number_people").style.display = "block";
+                return;
+            }
+            document.getElementById("validate_number_people").style.display = "none";
+            document.getElementById("text_after_calculation").style.display = "block";
+            var date = $("#id_date").val();
+            var student = $("#id_student").val();
+            var duration = $("#id_duration").val();
+            var start_time = $("#id_start_time").val();
+
+            $.ajax({
+                url: '{% url "booking:validate_price" %}',
+                data: {
+                    'number_people': number_people,
+                    'date': date,
+                    'student': student,
+                    'duration': duration,
+                    'start_time': start_time,
+                },
+                dataType: 'json',
+                success: function (data) {
+                    document.getElementById('id_price').value = data.price
+                }
+            })
+        }
+    </script>
+{% endblock %}
+
+
+
+
+{% block content %}
+    <div class="clearfix">
+        <a class="btn btn-info left" href="{% url 'booking:calendar' %}">{% trans "Kalender"  %}</a>
+    </div>
+
+    <form method="post">
+        {% csrf_token %}
+        <table class="form form-table">
+            {{ form }}
+        </table>
+
+
+        <!--<button type="submit" class="btn btn-info right"> {% trans "Absenden" %} </button> -->
+
+
+
+    <p> <input type="button"  class="btn btn-info right" value="{% blocktrans %}Preisberechnung{% endblocktrans %}" onclick="calculate()"></p><br>
+    <p id="validate_number_people" align="right" style="color:red;"> {% blocktrans %} Bitte füllen Sie das Formular vollständig aus {%endblocktrans %} </p>
+    <text id="info_calc_price"> {% blocktrans %} Um die Buchung abzuschließen, berechnen Sie bitte zuerst den Preis. {% endblocktrans %}</text>
+
+    <div id="text_after_calculation">
+        <b> {% blocktrans %} Bitte beachten Sie, dass eine Kaution im Wert von  {% endblocktrans%}<div style=" color:red;font-weight: bold; display:inline" >200€ </div>
+           {% blocktrans %} hinterlegt werden muss.  {% endblocktrans%}</b> <br>
+        <b> {% blocktrans %} Der Preis Ihrer Buchung beträgt: {% endblocktrans%} </b>
+        <div style="color:red;font-weight: bold; display:inline">
+        <output id="id_price"> </output> € <br>
+        </div>
+        {% blocktrans %} Wenn Sie mit der Buchung fortfahren möchten, drücken Sie auf Absenden. Sie können noch bis 5 Tage vor dem gebuchten Datum die Buchung kostenfrei stornieren. {% endblocktrans %}
+       <br>
+        <button type="submit" class="btn btn-info right"> {% trans "Absenden" %} </button>
+    </div>
+
+    </form>
+{% endblock %}
+
+
+

@@ -1,0 +1,6 @@
+Liebe Reinigungskraft,
+
+das FORUM International wurde von {{ start_datetime }} bis {{ end_datetime }} gebucht. Danach ist eine Reinigung notwendig.
+
+Liebe Grüße,
+FORUM International-Team

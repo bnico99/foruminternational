@@ -1,0 +1,489 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-21 21:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: user_account/forms.py:16
+msgid "Herr"
+msgstr "Mr."
+
+#: user_account/forms.py:17
+msgid "Frau"
+msgstr "Ms./Mrs."
+
+#: user_account/forms.py:29
+msgid "Anrede"
+msgstr "Title"
+
+#: user_account/forms.py:30
+msgid "Vorname"
+msgstr "first name"
+
+#: user_account/forms.py:31
+msgid "Nachname"
+msgstr "last name"
+
+#: user_account/forms.py:33
+msgid "Bitte geben Sie eine korrekte E-Mail-Adresse an."
+msgstr "Please enter a correct e-mail address"
+
+#: user_account/forms.py:34
+msgid "Email-Adresse"
+msgstr "E-mail"
+
+#: user_account/forms.py:35
+msgid "PLZ"
+msgstr "Postcode"
+
+#: user_account/forms.py:36
+msgid "Ort"
+msgstr "City"
+
+#: user_account/forms.py:37
+msgid "Straße"
+msgstr "Street"
+
+#: user_account/forms.py:38
+msgid "Hausnummer"
+msgstr "House number"
+
+#: user_account/forms.py:39
+msgid "Telefonnummer"
+msgstr "Phone"
+
+#: user_account/forms.py:40
+msgid "Geburtsdatum"
+msgstr "Date of birth"
+
+#: user_account/forms.py:75
+#, fuzzy
+#| msgid "Ich habe die Datenschutzerklärung gelesen."
+msgid "Bitte akzeptieren Sie die Datenschutzerklärung um fortzufahren."
+msgstr "I read the data privacy terms."
+
+#: user_account/forms.py:78
+msgid "Der eingegebene Titel ist nicht valide."
+msgstr "The title is not valid."
+
+#: user_account/forms.py:83
+msgid ""
+"Der eingegebene Vorname ist nicht valide.\n"
+"Vornamen müssen mit einem Großbuchstaben beginnen und dürfen nur aus "
+"Buchstaben und den folgenden Symbolen bestehen -,'."
+msgstr ""
+"The given first name is not valid. \n"
+"First names need to start with a capital letter"
+
+#: user_account/forms.py:89
+msgid ""
+"Der eingegebene Nachname ist nicht valide.\n"
+"Nachnamen müssen mit einem Großbuchstaben beginnen und dürfen nur aus "
+"Buchstaben und den folgenden Symbolen bestehen -,'."
+msgstr ""
+"The last name is not valid.Last names need to start with a capital letter"
+
+#: user_account/forms.py:93
+msgid "Es existiert bereits ein Account zu dieser E-Mail-Adresse."
+msgstr "There is already an account with this e-mail address."
+
+#: user_account/forms.py:96
+msgid "Der eingegebene E-Mail-Adresse ist nicht valide."
+msgstr "The given e-mail address is not valid."
+
+#: user_account/forms.py:100
+msgid "Die eingegebene Postleitzahl ist nicht valide."
+msgstr "The given cip code is not valid. "
+
+#: user_account/forms.py:105
+msgid ""
+"Die eingegebene Stadt ist nicht valide.\n"
+"Städtenamen müssen mit einem Großbuchstaben beginnen und dürfen nur aus "
+"Buchstaben und den folgenden Symbolen bestehen .,-,'."
+msgstr ""
+"The given city is not valid. The city name needs to start with a capital "
+"letter."
+
+#: user_account/forms.py:111
+msgid ""
+"Der eingegebene Straßenname ist nicht valide.\n"
+"Straßennamen müssen mit einem Großbuchstaben beginnen und dürfen nur aus "
+"Buchstaben und den folgenden Symbolen bestehen .,-,'."
+msgstr ""
+"The given street name is not valid. The street name needs to start with a "
+"capital letter."
+
+#: user_account/forms.py:115
+msgid ""
+"Die eingegebene Hausnummer ist nicht valide.\n"
+"Hausnummern müssen mit einer Zahl zwischen 1-9 beginnen und dürfen nur aus "
+"Buchstaben und Zahlen bestehen."
+msgstr "The given house number needs to be a number or a letter."
+
+#: user_account/forms.py:119
+msgid ""
+"Die eingegebene Telefonnummer ist nicht valide. Telefonnummer müssen mit "
+"einer Zahl oder dem Zeichen + beginnen.Sie dürfen nur aus Zahlen und den "
+"Zeichen + und / bestehen."
+msgstr "The given phone number is not valid. "
+
+#: user_account/forms.py:123
+msgid "Das eingegebene Geburtsjahr ist nicht valide."
+msgstr "The given birth year is invalid"
+
+#: user_account/forms.py:126
+msgid "Der eingegebene Geburtsmonat ist nicht valide."
+msgstr "The given birth month is invalid."
+
+#: user_account/forms.py:129
+msgid "Der eingegebene Geburtstag ist nicht valide."
+msgstr "The given birth date is not valid. "
+
+#: user_account/templates/user_account/account_activated.html:9
+msgid " Ihr Account wurde erfolgreich aktiviert. "
+msgstr " Your account was successfully added. "
+
+#: user_account/templates/user_account/account_activated.html:10
+msgid " Hier geht es zur Anmeldung. "
+msgstr " You can sign in here."
+
+#: user_account/templates/user_account/account_change.html:6
+msgid " Ihr Account wurde erfolgreich geändert "
+msgstr " Your account was successfully added. "
+
+#: user_account/templates/user_account/account_change.html:11
+msgid " Ihr Account wurde erfolgreich verändert"
+msgstr " Your account was successfully added."
+
+#: user_account/templates/user_account/account_change.html:12
+#: user_account/templates/user_account/storno_final.html:12
+msgid "Bei weiteren Fragen wenden Sie sich bitte an: "
+msgstr "If you have further questions, please contact:"
+
+#: user_account/templates/user_account/account_change.html:13
+#: user_account/templates/user_account/storno_final.html:13
+msgid "Hier gehts zurück: "
+msgstr "You can go back here: "
+
+#: user_account/templates/user_account/activate_account.html:3
+msgid "Hallo"
+msgstr "Hello"
+
+#: user_account/templates/user_account/activate_account.html:4
+msgid ""
+"Bitte klicken Sie auf den folgenden Link um ihren \"FORUM international\"-"
+"Account zu bestätigen"
+msgstr ""
+"Please click on the following link to verify the Forum International account"
+
+#: user_account/templates/user_account/myaccount.html:7
+#: user_account/templates/user_account/myaccount_edit.html:6
+msgid "Meine Buchungen:"
+msgstr "My reservations:"
+
+#: user_account/templates/user_account/myaccount.html:15
+msgid "Keine Buchungen."
+msgstr "No reservations."
+
+#: user_account/templates/user_account/myaccount.html:19
+msgid "Ihre Nutzerdaten:"
+msgstr "My data:"
+
+#: user_account/templates/user_account/myaccount.html:20
+#: user_account/templates/user_account/myaccount_edit.html:87
+msgid "Benutzername:"
+msgstr "User name:"
+
+#: user_account/templates/user_account/myaccount.html:21
+#: user_account/templates/user_account/myaccount_edit.html:115
+msgid "Vorname:"
+msgstr "First name:"
+
+#: user_account/templates/user_account/myaccount.html:22
+#: user_account/templates/user_account/myaccount_edit.html:129
+msgid "Nachname:"
+msgstr "Last name:"
+
+#: user_account/templates/user_account/myaccount.html:23
+#: user_account/templates/user_account/myaccount_edit.html:143
+msgid "Geburtsdatum:"
+msgstr "Date of birth: "
+
+#: user_account/templates/user_account/myaccount.html:24
+#: user_account/templates/user_account/myaccount_edit.html:236
+#, fuzzy
+#| msgid "email"
+msgid "E-mail:"
+msgstr "E-mail:"
+
+#: user_account/templates/user_account/myaccount.html:25
+#: user_account/templates/user_account/myaccount_edit.html:182
+msgid "Adresse:"
+msgstr "Address:"
+
+#: user_account/templates/user_account/myaccount.html:27
+#: user_account/templates/user_account/myaccount_edit.html:246
+#, fuzzy
+#| msgid "Telefon"
+msgid "Telefon:"
+msgstr "Phone:"
+
+#: user_account/templates/user_account/myaccount.html:28
+#: user_account/templates/user_account/myaccount_edit.html:166
+#: user_account/templates/user_account/myaccount_edit.html:221
+#: user_account/templates/user_account/myaccount_edit.html:266
+#: user_account/templates/user_account/myaccount_edit.html:323
+msgid "bearbeiten"
+msgstr "edit"
+
+#: user_account/templates/user_account/myaccount.html:31
+msgid "Bitte melden Sie sich an um ihren Account zu sehen."
+msgstr "Please login first to view your account."
+
+#: user_account/templates/user_account/myaccount_edit.html:16
+#: user_account/templates/user_account/myaccount_edit.html:341
+msgid "Ende:"
+msgstr "End:"
+
+#: user_account/templates/user_account/myaccount_edit.html:17
+#: user_account/templates/user_account/myaccount_edit.html:342
+msgid "Kosten:"
+msgstr "Price:"
+
+#: user_account/templates/user_account/myaccount_edit.html:18
+#: user_account/templates/user_account/myaccount_edit.html:343
+msgid "Erwartete Personen:"
+msgstr "Number of people:"
+
+#: user_account/templates/user_account/myaccount_edit.html:19
+#: user_account/templates/user_account/myaccount_edit.html:344
+msgid "Kühlschränke erwünscht:"
+msgstr "Refrigerator:"
+
+#: user_account/templates/user_account/myaccount_edit.html:19
+#: user_account/templates/user_account/myaccount_edit.html:344
+msgid "Ja"
+msgstr "Yes"
+
+#: user_account/templates/user_account/myaccount_edit.html:19
+#: user_account/templates/user_account/myaccount_edit.html:344
+msgid "Nein"
+msgstr "No"
+
+#: user_account/templates/user_account/myaccount_edit.html:26
+msgid "Die Miete und die Kaution wurde bezahlt."
+msgstr "The rent and deposit have been paid."
+
+#: user_account/templates/user_account/myaccount_edit.html:28
+msgid " Die Kaution wurde bezahlt. "
+msgstr "The deposit has been paid."
+
+#: user_account/templates/user_account/myaccount_edit.html:29
+msgid " Die Miete ist noch zu bezahlen. "
+msgstr "The rent has not been paid yet."
+
+#: user_account/templates/user_account/myaccount_edit.html:34
+msgid " Die Miete wurde bezahlt. "
+msgstr "The rent has been paid."
+
+#: user_account/templates/user_account/myaccount_edit.html:35
+msgid " Die Kaution ist noch zu bezahlen. "
+msgstr "The deposit has not been paid yet."
+
+#: user_account/templates/user_account/myaccount_edit.html:38
+msgid " Die Kaution und die Miete müssen noch bezahlt werden. "
+msgstr "The deposit and the rent have not been paid yet."
+
+#: user_account/templates/user_account/myaccount_edit.html:43
+#: user_account/templates/user_account/myaccount_edit.html:347
+msgid " Die Kaution wurde zurrückgezahlt. "
+msgstr "The deposit has been paid back."
+
+#: user_account/templates/user_account/myaccount_edit.html:51
+msgid ""
+" Sind Sie sich sicher, dass Sie diese Buchung stornieren möchten? 5 Tage vor "
+"Beginn der Buchung ist dies kostenfrei, anderenfalls wird nur die Kaution "
+"rückerstattet."
+msgstr ""
+"Are you sure you want to cancel your booking? Five days before the booking, "
+"you can cancel for free, otherwise you need to pay for the room."
+
+#: user_account/templates/user_account/myaccount_edit.html:53
+msgid "Stornieren"
+msgstr "Cancel booking"
+
+#: user_account/templates/user_account/myaccount_edit.html:55
+msgid "Abbrechen"
+msgstr "quit"
+
+#: user_account/templates/user_account/myaccount_edit.html:58
+msgid "stornieren"
+msgstr "Cancel booking"
+
+#: user_account/templates/user_account/myaccount_edit.html:70
+#: user_account/templates/user_account/myaccount_edit.html:357
+msgid " Keine Buchungen. "
+msgstr " No bookings."
+
+#: user_account/templates/user_account/myaccount_edit.html:76
+msgid "Meine Nutzerdaten:"
+msgstr "My data:"
+
+#: user_account/templates/user_account/myaccount_edit.html:101
+msgid " Anrede: "
+msgstr " Title: "
+
+#: user_account/templates/user_account/myaccount_edit.html:161
+#: user_account/templates/user_account/myaccount_edit.html:214
+#: user_account/templates/user_account/myaccount_edit.html:261
+#: user_account/templates/user_account/myaccount_edit.html:317
+msgid "abbrechen"
+msgstr "quit"
+
+#: user_account/templates/user_account/myaccount_edit.html:163
+#: user_account/templates/user_account/myaccount_edit.html:216
+#: user_account/templates/user_account/myaccount_edit.html:263
+#: user_account/templates/user_account/myaccount_edit.html:319
+msgid "speichern"
+msgstr "save"
+
+#: user_account/templates/user_account/myaccount_edit.html:188
+msgid "PLZ:"
+msgstr "Postal code:"
+
+#: user_account/templates/user_account/myaccount_edit.html:189
+msgid "Ort:"
+msgstr "City:"
+
+#: user_account/templates/user_account/myaccount_edit.html:201
+msgid "Straße:"
+msgstr "Street:"
+
+#: user_account/templates/user_account/myaccount_edit.html:202
+msgid "Hausnummer:"
+msgstr "House number:"
+
+#: user_account/templates/user_account/myaccount_edit.html:281
+msgid "Passwort neu"
+msgstr "new password"
+
+#: user_account/templates/user_account/myaccount_edit.html:291
+msgid "Passwort"
+msgstr "Password"
+
+#: user_account/templates/user_account/myaccount_edit.html:301
+msgid "Passwort neu wiederholt"
+msgstr "repeat new password"
+
+#: user_account/templates/user_account/myaccount_edit.html:332
+msgid "Meine alten Buchungen:"
+msgstr "My old bookings:"
+
+#: user_account/templates/user_account/myaccount_edit.html:340
+msgid "Beginn:"
+msgstr "begin:"
+
+#: user_account/templates/user_account/myaccount_edit.html:361
+msgid "Bitte melden Sie sich an um Ihren Account zu sehen"
+msgstr "Please login first to view your account"
+
+#: user_account/templates/user_account/registration_confirm.html:9
+msgid ""
+" Wir haben Ihnen eine E-Mail geschickt, bitte bestätigen Sie diese um Ihren "
+"Account zu aktivieren."
+msgstr "We have send you an e-mail. Please confirm it."
+
+#: user_account/templates/user_account/registration_confirm.html:10
+#, fuzzy
+#| msgid "Bei weiteren Fragen wenden Sie sich bitte an: "
+msgid " Bei weiteren Fragen wenden Sie sich bitte an:"
+msgstr "If you have further questions, please contact:"
+
+#: user_account/templates/user_account/signup.html:6
+msgid "Registrierung"
+msgstr "Registration"
+
+#: user_account/templates/user_account/signup.html:24
+#, fuzzy
+#| msgid "Registrierung"
+msgid "Registrieren"
+msgstr "Registration"
+
+#: user_account/templates/user_account/storno_final.html:6
+msgid " Stornierung erfolgreich "
+msgstr " The cancellation was succesful"
+
+#: user_account/templates/user_account/storno_final.html:11
+msgid " Sie erhalten Ihre Stornierungsbestätigung per E-Mail an:  "
+msgstr "You will get a cancellation E-mail to:"
+
+#: user_account/templates/user_account/storno_final.html:13
+msgid " Mein Account "
+msgstr " My account "
+
+#: user_account/views.py:55
+msgid "Bitte bestätigen Sie Ihren \"FORUM international\"-Account."
+msgstr "Please verify the \"FORUM international\"-account."
+
+#~ msgid " Begin: %(begin)s "
+#~ msgstr "begin: %(begin)s"
+
+#~ msgid "Der Vertrag wurde unterschrieben."
+#~ msgstr "The contract has been signed."
+
+#~ msgid "Der Vertrag muss noch unterschrieben werden."
+#~ msgstr "The contract has not been signed yet."
+
+#~ msgid ""
+#~ " Sind Sie sich sicher das sie eine Besichtigung möchten? wenn ja, dann "
+#~ "wird eine Mail an eine zuständige Person geschick die sich mit Ihnen in "
+#~ "Kontakt setzer wird um einen Termin zu vereinbaren. "
+#~ msgstr ""
+#~ "Are you sure you want to visit the room? If yes, a mail a sent to the "
+#~ "person in charge will be sent."
+
+#~ msgid "JA"
+#~ msgstr "YES"
+
+#~ msgid "Besichtigungstermin anfragen"
+#~ msgstr "Do you want to visit the room?"
+
+#, fuzzy
+#~| msgid "Adresse:"
+#~ msgid "Adresse: "
+#~ msgstr "Address:"
+
+#, fuzzy
+#~| msgid "email"
+#~ msgid "E-mail: "
+#~ msgstr "E-mail:"
+
+#, fuzzy
+#~| msgid "Telefon"
+#~ msgid "Telefon: "
+#~ msgstr "Phone:"
+
+#, fuzzy
+#~| msgid "email"
+#~ msgid "E-mail"
+#~ msgstr "E-mail:"
+
+#~ msgid "Telefon"
+#~ msgstr "Phone"
+
+#~ msgid "email"
+#~ msgstr "email"

@@ -1,0 +1,125 @@
+{% extends 'base_layout.html' %}
+{% block content %}
+    {% load i18n %}
+
+    {% if faq_entries %}
+        <ul>
+            {% for entry in faq_entries %}
+                <p><h4>{{ entry.question_text }}</h4></p>
+            <p>{{ entry.answer_text }}</p>
+            <hr id="inspect">
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>{% trans "Keine Fragen." %} </p>
+        <hr>
+    {% endif %}
+    <br><br>
+    {% if user.is_authenticated %}
+    <form method="post">
+        {% csrf_token %}
+        {%if inspection == '1'%}
+
+
+                 {%  blocktrans %} Sind Sie sich sicher, dass Sie eine Besichtigung anfragen möchten? Wir werden uns dann per Mail mit Ihnen in Verbindung setzen.{%endblocktrans%} <br>
+
+                <button type="submit" style="margin: 20px;" name="{{entry}}" class="btn btn-info"> {%  trans "JA" %}</button>
+                <a class="btn btn-info" href="?inspection=0#inspect"> {%  blocktrans %}Abbrechen{%endblocktrans %}</a>
+        {% else %}
+                 {% blocktrans %} Möchten Sie einen Termin zur Raumbesichtigung vereinbaren? {%  endblocktrans %}
+                 <a href="?inspection=1#inspect" class="btn btn-info">{%  trans "Besichtigungstermin anfragen" %}</a>
+        {% endif %}
+    </form>
+    <br><br><hr>
+    {% endif %}
+    <br>
+    <table class="table table-bordered">
+   <header> {%trans "Unter der Woche stehen Ihnen folgende Möglichkeiten zur Verfügung. Alle Preise sind in Euro gegeben." %}</header>
+        <thead>
+        <tr>
+            <th scope="col">{% trans "Dauer" %}</th>
+            <th scope="col" colspan="4">{% trans "Unter der Woche (Mo, Di, Mi, Do, Fr)" %}</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row"> </th>
+            <th scope="row" colspan="2">{% trans "Student" %} </th>
+            <th scope="row" colspan="2">{% trans "kein Student" %} </th>
+
+        </tr>
+        <tr>
+        <tr>
+            <th scope="row"> Personenzahl:</th>
+            <th scope="row">{% trans "unter 50" %} </th>
+            <th scope="row">{% trans "über 50" %} </th>
+            <th scope="row">{% trans "unter 50" %} </th>
+            <th scope="row">{% trans "über 50" %} </th>
+
+        </tr>
+        <tr>
+            <th scope="row">{% trans "bis 3 Stunden" %} </th>
+            <td> {{WSunder503h.text }}</td>
+            <td> {{  WSover503h.text}}</td>
+            <td> {{  WnSunder503h.text }}</td>
+            <td>{{  WnSover503h.text  }}</td>
+
+        </tr>
+        <tr>
+            <th scope="row">{% trans "bis 6 Stunden" %}</th>
+            <td>{{  WSunder506h.text }}</td>
+            <td> {{  WSover506h.text}}</td>
+            <td>{{  WnSunder506h.text}}</td>
+            <td>{{ WnSover506h.text }}</td>
+
+        </tr>
+        <tr>
+            <th scope="row">{% trans "bis 12 Stunden" %}</th>
+            <td>{{ WSunder509h.text }}</td>
+            <td>{{   WSover509h.text}}</td>
+            <td> {{  WnSunder509h.text }}</td>
+            <td> {{  WnSover509h.text }}</td>
+
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <table class="table table-bordered">
+    <header> {%trans "Am Wochenende stehen Ihnen folgende Möglichkeiten zur Verfügung. Alle Preise sind in Euro gegeben." %}</header>
+        <thead>
+        <tr>
+            <th scope="col">{% trans "Dauer" %}</th>
+            <th scope="col" colspan="2">{% trans "Am Wochenende (Sa, So)" %}</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row"> </th>
+            <th scope="row" >{% trans "Student" %} </th>
+            <th scope="row" >{% trans "kein Student" %} </th>
+
+        </tr>
+
+        <tr>
+            <th scope="row">{% trans "bis 12 Stunden" %} </th>
+            <td >{{  WES12h.text }}</td>
+            <td >{{WEnS12h.text }}</td>
+
+
+        </tr>
+        <tr>
+            <th scope="row">{% trans "bis 24 Stunden" %}</th>
+            <td >{{WES24h.text }}</td>
+            <td >{{WEnS24h.text}}</td>
+        </tr>
+
+
+        </tbody>
+    </table>
+
+    <br><hr><br>
+    <strong> {% blocktrans  with t1=ToiletCleaning.text c1=CleaningStudent.text c2=CleaningNoStudent.text %} Bitte beachten Sie, dass unter der Woche bei Buchungen, die nach 22 Uhr enden, zusätzlich {{ t1 }} € Reinigungsgebühr anfällt und dass am Wochenende grundsätzlich eine Endreinigungsgebühr in Höhe von {{ c1 }} € (Student) bzw. {{ c2 }} € (sonst) anfällt. {% endblocktrans %} </strong>
+
+{% endblock content %}

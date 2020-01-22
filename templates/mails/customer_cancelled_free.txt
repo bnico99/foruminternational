@@ -1,0 +1,12 @@
+{% if customer.title == 'Herr' %}
+Sehr geehrter Herr {{ customer.last_name }},
+{% else %}
+Sehr geehrte Frau {{ customer.last_name }},
+{% endif %}
+
+Ihre Buchung des FORUM International von {{ start_datetime }} bis {{ end_datetime }} wurde kostenfrei storniert.
+
+Falls Sie die Miete und/oder Kaution bereits bezahlt haben sollten oder die Schlüsselübergabe bereits stattgefunden haben sollte, so werden wir Sie diesbezüglich innerhalb weniger Tage kontaktieren.
+
+Mit freundlichen Grüßen,
+das FORUM International-Team

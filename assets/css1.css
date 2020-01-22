@@ -1,0 +1,60 @@
+
+td a {
+    display:block;
+    width:100%;
+}
+
+/* added for navbar in base_layout*/
+.navbar .navbar-nav > .active > a{
+    background-color: gray!important;
+}
+.navbar {
+    padding: 0rem !important;
+    line-height: 2rem !important;
+    padding-left:2rem !important;
+}
+
+.nav-link {
+    margin: 0rem !important;
+    padding-left:2rem !important;
+    padding-right:2rem !important;
+}
+
+
+/* added for forum gallery in base_layout*/
+* {
+    box-sizing: border-box;
+}
+
+.gallery-row {
+    display: flex;
+}
+
+.gallery-column {
+    flex: 25%;
+    max-height: 150px;
+}
+
+.gallery-column img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* end gallery*/
+
+/* added for my account*/
+.myAccountField {
+    box-shadow: -5px -5px 5px silver;
+    padding: 20px;
+    margin: 20px;
+    background-color: #dddddd;
+}
+
+#edit-button {
+    padding: 4px;
+}
+
+ul.errorlist {
+    color: red;
+}

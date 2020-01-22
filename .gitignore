@@ -1,0 +1,6 @@
+*.sqlite3
+.idea/
+__pycache__/
+
+website/data/generated_bills/*.docx
+website/data/generated_contracts/*.docx

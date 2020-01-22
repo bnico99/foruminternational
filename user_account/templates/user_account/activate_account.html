@@ -1,0 +1,6 @@
+{% autoescape off %}
+    {% load i18n %}
+{%  trans "Hallo" %} {{ user.first_name }},
+{%  trans 'Bitte klicken Sie auf den folgenden Link um ihren "FORUM international"-Account zu bestätigen'%} ,
+http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+{% endautoescape %}

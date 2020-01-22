@@ -1,0 +1,27 @@
+{% if customer.title == 'Herr' %}
+Dear Mr. {{ customer.last_name }},
+{% else %}
+Dear Mrs.  {{ customer.last_name }},
+{% endif %}
+
+Thank you for booking the FORUM International.
+
+You can find the contract and the bill in the attachment. Please sent the contract back to us until {{ return_date }} :
+    Zentrale des Beispiels im Saarland e. V.
+    Campus Beispiel
+    Building D4.1
+    12345 Beispiel
+
+    Fax (0681/302-2890)
+    E-Mail (info@example.com)
+
+We will contact you soon to agree on a date to hand over the keys.
+
+Your booking :
+
+Begin: {{ start_datetime }}
+End: {{ end_datetime }}
+Occasion: {{ occasion }}
+
+Kind regards,
+das FORUM International-Team

@@ -1,0 +1,16 @@
+{% if customer.title == 'Herr' %}
+Sehr geehrter Herr {{ customer.last_name }},
+{% else %}
+Sehr geehrte Frau {{ customer.last_name }},
+{% endif %}
+
+mit dieser E-Mail möchten wir Sie gerne daran errinern, dass die Miete für folgende Buchung des
+FORUM International noch bezahlt werden muss:
+
+Datum: {{ start_date }}
+Beginn: {{ start_time }}
+Ende: {{ end_datetime }}
+Anlass: {{ occasion }}
+
+Mit freundlichen Grüßen,
+das FORUM International-Team

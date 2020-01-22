@@ -1,0 +1,6 @@
+Lieber Hausmeister,
+
+die Buchung des FORUM International für {{ date }} ab {{ time }} Uhr wurde storniert. Der Kühlraum wird also nicht mehr benötigt.
+
+Liebe Grüße,
+FORUM International-Team

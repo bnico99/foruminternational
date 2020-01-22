@@ -1,0 +1,14 @@
+{% extends 'base_layout.html' %}
+{% load i18n %}
+
+
+{% block content %}
+
+    <div style="text-align: center;">
+        <div style="display: inline-block; text-align: left;">
+            {% blocktrans %} Wir haben Ihnen eine E-Mail geschickt, bitte bestätigen Sie diese um Ihren Account zu aktivieren.{% endblocktrans %} <br>
+            {% blocktrans %} Bei weiteren Fragen wenden Sie sich bitte an:{% endblocktrans %} <a href="mailto:info@example.com">info@example.com</a>.<br>
+        </div>
+    </div>
+
+{% endblock %}

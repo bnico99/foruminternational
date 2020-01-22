@@ -1,0 +1,22 @@
+Lieber Admin,
+
+eine Buchung des FORUM International wurde gerade storniert.
+
+Hier sind die wichtigsten Buchungsinformationen auf einen Blick:
+
+Kunde:
+
+Vorname: {{ customer.first_name }}
+Nachname: {{ customer.last_name }}
+E-Mail: {{ customer.email }}
+Geburtsdatum: {{ customer.date_of_birth }}
+Student Uds/HTW:
+
+Buchung:
+
+Beginn:
+Ende:
+Anlass:
+
+Liebe Grüße,
+FORUM International-Team

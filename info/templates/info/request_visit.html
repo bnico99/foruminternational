@@ -1,0 +1,18 @@
+{% extends 'base_layout.html' %}
+{% load i18n %}
+
+
+{% block content %}
+    <h1 style="text-align:center;">  {% blocktrans %} Besichtigung angefordert {% endblocktrans %}</h1>
+
+    <br>
+    <div style="text-align: center;">
+        <div style="display: inline-block; text-align: left;">
+           {% blocktrans %} Sie haben eine Besichtigung angefragt. Wir werden uns in Kürze per Mail mit Ihnen in Verbindung setzen. {% endblocktrans %}<br>
+           {% blocktrans %} Bei weiteren Fragen wenden Sie sich bitte an: {% endblocktrans %}<a href="mailto:info@example.com">info@example.com</a>.
+           {% blocktrans %} Hier gehts zurück:{% endblocktrans %} <a href="{% url 'info:faq' %}"> FAQ </a>  <br>
+
+        </div>
+    </div>
+
+{% endblock %}

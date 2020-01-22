@@ -1,0 +1,90 @@
+
+.calendar{
+  width:100%;
+  overflow: hidden;
+  word-wrap: normal;
+  table-layout:fixed;
+}
+
+.calendar tr, .calendar td {
+  border: 1px solid black;
+  height:1em;
+}
+
+
+.calendar th {
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.calendar td {
+  border-spacing: 0px;
+  width: 200px;
+  height: 50px;
+  padding: 0px 0px 0px 0px;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.month {
+  font-size: 25px;
+}
+
+.date {
+  font-size: 16px;
+}
+
+ul {
+  padding: 0px 0px 0px 0px;
+}
+
+a {
+  color: #17a2b8;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.btn {
+  outline: none;
+  color: black;
+  background-color: transparent;
+  box-shadow: 0 0 0 0;
+}
+
+.clearfix {
+  margin: 15px;
+}
+
+.form {
+  margin: auto;
+}
+
+.form input, .form select, .form textarea {
+  border-radius: 5px;
+  border: 1px solid #17a2b8;
+  outline: none;
+  background: none;
+  padding: 5px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.form label {
+  margin-right: 8px;
+}
+
+
+.event {
+  background:#f99898;
+}
+
+input:read-only {
+    background-color: gainsboro;
+}

@@ -1,0 +1,7 @@
+Liebe Reinigungskraft,
+
+die Buchung des FORUM International von {{ start_datetime }} bis {{ end_datetime }} wurde storniert.
+Eine Reinigung ist also nicht mehr notwendig.
+
+Liebe Grüße,
+FORUM International-Team

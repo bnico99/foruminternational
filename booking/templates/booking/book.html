@@ -1,0 +1,132 @@
+{% extends 'base_layout.html' %}
+{% load i18n %}
+{% block content %}
+    {% if user.is_authenticated %}
+        {#  calendar that was used: https://www.huiwenteo.com/normal/2018/07/29/django-calendar-ii.html#}
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="clearfix">
+                        {% if not date_in_past_month %}
+                            <a class="btn btn-secondary float-left" role="button"
+                               href="{% url 'booking:calendar' %}?{{ prev_month }}#month"> < {{ prev_month_name }}  </a>
+                        {% endif %}
+                        {% if not six_month_ahead %}
+                            <a class="btn btn-secondary float-right" role="button"
+                               href="{% url 'booking:calendar' %}?{{ next_month }}#month"> {{ next_month_name }} > </a>
+                        {% endif %}
+                    </div>
+                    <table border="0" cellpadding="0" cellspacing="0" class="calendar">
+                        {{ calendar }}
+                    </table>
+                    <br>
+                    <p> {% trans "Verfügbarkeit:" %}</p>
+                    <span style="background-color:green">  &nbsp;  &nbsp; </span> {% trans "Verfügbar" %}
+                    <span style="background-color:rgb(204,204,0)">  &nbsp;  &nbsp; </span> {% trans "Geringe Verfügbarkeit" %}
+                    <br>
+                    <span style="background-color:red">  &nbsp;  &nbsp; </span> {% trans "Ausgebucht" %}
+                    <span style="background-color:grey">  &nbsp;  &nbsp; </span> {% trans "Nicht buchbar" %}
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                {% if not dur_chosen %}
+                    <div class="col">
+                        {% if durationlist %}
+                            <p> {% trans "Ihr gewähltes Datum: " %} <b>{{ datum.date }} </b></p>
+                            <p> {% trans "Bitte wählen Sie die gewünschte Dauer Ihrer Buchung:" %} <br></p>
+                            <ul>
+                                {% for entry in durationlist %}
+
+                                    <a class="btn btn-secondary btn-block " role="button"
+                                       href="{{ request.get_full_path }}&dur={{ entry }}">{{ entry }} {% trans "Stunden" %}</a>
+                                {% endfor %}
+                            </ul>
+                        {% elif datum %}
+                            <p> {% trans "Ihr gewähltes Datum: " %} <b>{{ datum.date }} </b></p>
+                            <p> {% blocktrans %} Leider ist dieser Tag bereits ausgebucht. Sie können sich in die
+                                Warteliste
+                                eintragen, um eine Benachrichtigung zu erhalten, sobald ein Termin frei geworden ist.
+                            {% endblocktrans %} </p>
+                            <a class="btn btn-primary" role=button"
+                               href="{% url 'booking:request_waitinglist' date=datum.date %}"> {% trans "Auf Warteliste setzen" %}</a>
+                        {% endif %}
+                    </div>
+                {% else %}
+                    <a id="dayselected"></a>
+                    {% if free_timeslots %}
+                        <div class="col">
+                            <div class="row" >
+                                <div class="col">
+                                    <ul>
+                                        <p> {% trans "Ihr gewähltes Datum: " %} <b>{{ datum.date }} </b></p>
+                                        <p> {% trans "Die Dauer Ihrer Buchung beträgt: " %}
+                                            <b>{{ dur }} {% trans "Stunden" %} </b>
+                                        </p>
+                                        <br>
+                                        <p> {% trans "Bitte wählen Sie das gewünschte Zeitfenster Ihrer Buchung:" %}</p>
+                                        <br>
+                                        {% for start,end in free_timeslots.items %}
+
+                                            <a class="btn btn-secondary btn-block" role=button"
+                                               href="{% url 'booking:event_edit' event_datum=datum.date  event_time=start event_dur=dur %}">
+                                                {{ start }} - {{ end }}</a>
+                                        {% endfor %}
+                                    </ul>
+
+                                </div>
+
+                                <div class="col">
+                                    <ul>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <br>
+
+                                        <p>{% trans "Diese Zeitfenster sind leider nicht mehr verfügbar:" %} </p><br>
+                                        {% for start,end in blocked_timeslots.items %}
+
+                                            <button type="button" class="btn btn-secondary btn-block"
+                                                    disabled> {{ start }}
+                                                - {{ end }}</button>
+
+                                        {% endfor %}
+
+                                    </ul>
+
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <br>
+                                <br>
+                                <br>
+                                <p> <b>{% trans "Gewünschter Termin nicht dabei?" %}</b><br>
+                                    {% trans "Sie können sich in die Warteliste eintragen, um eine Benachrichtigung zu erhalten, sobald ein Termin frei geworden ist. " %}
+                                    <br>
+                                    <br>
+                                    <a class="btn btn-primary " role=button"
+                                       href="{% url 'booking:request_waitinglist' date=datum.date %}"> {% trans "Auf Warteliste setzen" %}</a>
+                                </p>
+                            </div>
+                        </div>
+
+                    {% else %}
+                        <p> {% trans "Wir können leider kein freies Zeitfenster zu Ihren Angaben finden." %} </p>
+                    {% endif %}
+                {% endif %}
+
+            </div>
+        </div>
+    {% else %}
+        <p>{% trans "Bitte melden Sie sich an um den Raum zu buchen" %} <a
+                href="{% url 'login' %}"> {% trans "Anmelden" %} </a></p>
+        <p>{% trans "Sie haben noch keinen Account?" %} <a
+                href="{% url 'register_user' %}"> {% trans "Registrieren" %}</a></p>
+
+
+    {% endif %}
+    <a id="selectioncomplete"></a>
+{% endblock %}
+
+

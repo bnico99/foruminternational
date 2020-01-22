@@ -1,0 +1,17 @@
+{% extends 'base_layout.html' %}
+{% load i18n %}
+
+
+{% block content %}
+    <h1 style="text-align:center;"> {% trans "Vielen Dank für Ihre Buchung." %}</h1>
+
+    <br>
+    <div style="text-align: center;">
+        <div style="display: inline-block; text-align: left;">
+            {% blocktrans %} Sie erhalten Ihre Buchungsbestätigung per E-Mail an: {% endblocktrans %} {{ user.email }}. <br>
+            {%  trans "Ihre Buchung ist unter" %}<a href="{% url 'myaccount_edit' %}"> {% trans "Mein Account" %} </a> {% trans "einsehbar" %}.<br> <br>
+            {% blocktrans %} Bei weiteren Fragen wenden Sie sich bitte an:{% endblocktrans %} <a href="mailto:info@example.com">info@example.com</a>.
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+<!-- templates/registration/login.html -->
+{% extends 'base_layout.html' %}
+{% load i18n %}
+{% block content %}
+
+{#    {%  load crispy_forms_tags %}#}
+<h2>{% trans "Anmelden" %} </h2>
+<form method="post" class="form-group">
+  {% csrf_token %}
+{#    {{ form|crispy }}#}
+  {{ form.as_p }}
+  <button type="submit" class="btn btn-success">{% trans "Anmelden" %}</button>
+</form>
+{%  trans "Sie haben noch keinen Account?" %} </br>
+<a href="{%  url 'register_user' %}" class=""> {% trans "Hier geht es zur Registrierung" %}</a>
+
+
+{% endblock %}
+
+
+

@@ -1,0 +1,17 @@
+{% extends 'base_layout.html' %}
+{% load i18n %}
+
+
+{% block content %}
+    <h1 style="text-align:center;">  {% blocktrans %} Sie wurden auf die Warteliste gesetzt! {% endblocktrans %}</h1>
+
+    <br>
+    <div style="text-align: center;">
+        <div style="display: inline-block; text-align: left;">
+           {% blocktrans %} Sie wurden auf die Warteliste gesetzt. Sobald eine Buchung an für diesen Tag storniert wird, werden wir Sie per Mail darüber informieren. {% endblocktrans %}<br>
+           {% blocktrans %} Bei weiteren Fragen wenden Sie sich bitte an: {% endblocktrans %}<a href="mailto:info@example.com">info@example.com</a>.
+
+        </div>
+    </div>
+
+{% endblock %}

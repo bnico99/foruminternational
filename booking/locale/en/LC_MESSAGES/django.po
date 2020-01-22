@@ -1,0 +1,426 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-21 21:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: booking/forms.py:55
+msgid "You cant book events in the past"
+msgstr ""
+
+#: booking/forms.py:57
+msgid "Es gibt bereits eine Buchung zu diesem Zeitpunkt."
+msgstr "This timeslot is already taken."
+
+#: booking/forms.py:61 booking/views.py:213
+msgid "An Wochentagen ist nur eine 3-,6- oder 12-stündige Buchung möglich."
+msgstr ""
+"During the week, you can only choose between 3-,6-, or 12-hour bookings."
+
+#: booking/forms.py:64 booking/views.py:216
+msgid "An Wochenenden ist nur eine 12- oder 24-stündige Buchung möglich."
+msgstr "On the weekend, you can only choose between 12-, or 24-hour bookings."
+
+#: booking/forms.py:68
+msgid "Eine Buchung ist erst ab 8 Uhr (Mo-Fr) bzw. 16 Uhr (Sa-So) möglich."
+msgstr ""
+
+#: booking/forms.py:71
+msgid "Buchungen können nur zur vollen Stunde beginnen."
+msgstr "Bookings can only start at full hours."
+
+#: booking/forms.py:74 booking/views.py:220
+msgid "Die Anzahl erscheinender Personen muss größer als 0 sein."
+msgstr "The number of people participating must be bigger than 0."
+
+#: booking/forms.py:77
+msgid "Ungültige Eingabe bei Studentenfrage."
+msgstr "Invalid Input: Student/no Student."
+
+#: booking/forms.py:80
+msgid "Ungültige Eingabe bei Kühlschrankfrage."
+msgstr "Invalid Input: Refrigerator."
+
+#: booking/forms.py:83
+msgid "Das Feld zum Anlass darf nicht leer sein."
+msgstr "The occasion must not be empty."
+
+#: booking/models.py:30
+msgid "Datum"
+msgstr "Date"
+
+#: booking/models.py:30
+#, fuzzy
+#| msgid "Bitte wählen Sie die gewünschte Dauer Ihrer Buchung:"
+msgid "Bitte wählen Sie ein Datum aus."
+msgstr "Please enter the time period you would like to book."
+
+#: booking/models.py:31
+msgid "Beginn"
+msgstr "Start"
+
+#: booking/models.py:31
+#, fuzzy
+#| msgid "Bitte wählen Sie die gewünschte Dauer Ihrer Buchung:"
+msgid "Bitte wählen Sie eine Uhrzeit aus."
+msgstr "Please enter the time period you would like to book."
+
+#: booking/models.py:33
+msgid "Dauer"
+msgstr "Duration"
+
+#: booking/models.py:33
+#, fuzzy
+#| msgid "Bitte wählen Sie die gewünschte Dauer Ihrer Buchung:"
+msgid "Bitte wählen Sie die gewünschte Dauer."
+msgstr "Please enter the time period you would like to book."
+
+#: booking/models.py:91
+msgid "JA"
+msgstr "YES"
+
+#: booking/models.py:92
+msgid "NEIN"
+msgstr "NO"
+
+#: booking/models.py:95
+msgid "Student (UdS/HTW)"
+msgstr "Student (UdS/HTW)"
+
+#: booking/models.py:97
+msgid "Bitte geben Sie an, ob Sie Student der UdS oder der HTW sind."
+msgstr "Are you a student at Uds or HTW?"
+
+#: booking/models.py:99
+msgid "Personenzahl"
+msgstr "Number of people"
+
+#: booking/models.py:101
+msgid "Bitte geben Sie an, wie viele Personen etwa erscheinen werden.   "
+msgstr "Please enter the number of people participating."
+
+#: booking/models.py:103
+msgid "Kühlschränke erwünscht?"
+msgstr "refrigerator?"
+
+#: booking/models.py:106
+msgid ""
+"Bitte geben Sie an, ob Sie die Kühlschränke des FORUM international benutzen "
+"möchten."
+msgstr "Would you like to use the refrigerator of the FORUM international?"
+
+#: booking/models.py:108
+msgid "Anlass"
+msgstr "Occasion"
+
+#: booking/models.py:109
+msgid "Bitte geben Sie einen Anlass an."
+msgstr "Please enter the occasion for your event."
+
+#: booking/models.py:111
+msgid "Bestätigt"
+msgstr "Confirmed"
+
+#: booking/models.py:112
+msgid "Miete bezahlt"
+msgstr "paid rent"
+
+#: booking/models.py:113
+msgid "Vertrag unterschrieben"
+msgstr "signed contract"
+
+#: booking/models.py:114
+msgid "Kaution gezahlt"
+msgstr "deposit paid"
+
+#: booking/models.py:115
+msgid "Kaution zurückerstattet"
+msgstr "deposit paid back"
+
+#: booking/models.py:117
+#, fuzzy
+#| msgid "Besichtigung wurde beantragt"
+msgid "Besichtigung beantragt"
+msgstr " You requested to visit the room"
+
+#: booking/models.py:971
+#, fuzzy
+#| msgid "Start Zeit"
+msgid "Startzeit"
+msgstr "Start time"
+
+#: booking/models.py:973
+msgid "Endzeit"
+msgstr ""
+
+#: booking/models.py:975
+msgid "Zeitpunkt der Buchung"
+msgstr "time of your booking"
+
+#: booking/models.py:977
+msgid "Zeitpunkt der Stornierung"
+msgstr "time of your cancellation"
+
+#: booking/models.py:981
+msgid "Miete"
+msgstr "Rent"
+
+#: booking/models.py:983
+msgid "hat der Kunde die Miete bereits gezahlt"
+msgstr "did the customer already pay the rent"
+
+#: booking/models.py:985
+msgid "die Miete muss zurückgezahlt werden"
+msgstr "the rent needs to be paid back"
+
+#: booking/models.py:987
+msgid "Rückzahlung der Miete erfolgt"
+msgstr "Rent is already paid back"
+
+#: booking/models.py:1067
+msgid "erster Termin"
+msgstr ""
+
+#: booking/models.py:1068
+#, fuzzy
+#| msgid "letzter Monat"
+msgid "letzter Termin"
+msgstr "next month"
+
+#: booking/models.py:1069
+msgid "Erste Ausnahme"
+msgstr ""
+
+#: booking/models.py:1070
+msgid "Zweite Ausnahme"
+msgstr ""
+
+#: booking/models.py:1071
+msgid "Dritte Ausnahme"
+msgstr ""
+
+#: booking/models.py:1072
+msgid "Vierte Ausnahme"
+msgstr ""
+
+#: booking/models.py:1073
+msgid "Fünfte Ausnahme"
+msgstr ""
+
+#: booking/templates/booking/book.html:23
+msgid "Verfügbarkeit:"
+msgstr "Availability"
+
+#: booking/templates/booking/book.html:24
+msgid "Verfügbar"
+msgstr "bookable"
+
+#: booking/templates/booking/book.html:25
+msgid "Geringe Verfügbarkeit"
+msgstr "booking limited"
+
+#: booking/templates/booking/book.html:27
+msgid "Ausgebucht"
+msgstr "fully booked"
+
+#: booking/templates/booking/book.html:28
+msgid "Nicht buchbar"
+msgstr "not bookable"
+
+#: booking/templates/booking/book.html:36
+#: booking/templates/booking/book.html:46
+#: booking/templates/booking/book.html:62
+msgid "Ihr gewähltes Datum: "
+msgstr "Your chosen date:"
+
+#: booking/templates/booking/book.html:37
+msgid "Bitte wählen Sie die gewünschte Dauer Ihrer Buchung:"
+msgstr "For how long would you like to book the room:"
+
+#: booking/templates/booking/book.html:42
+#: booking/templates/booking/book.html:64
+msgid "Stunden"
+msgstr "hours"
+
+#: booking/templates/booking/book.html:47
+msgid ""
+" Leider ist dieser Tag bereits ausgebucht. Sie können sich in die\n"
+"                                Warteliste\n"
+"                                eintragen, um eine Benachrichtigung zu "
+"erhalten, sobald ein Termin frei geworden ist.\n"
+"                            "
+msgstr ""
+"Unfortunately the date is already booked. You can get a notification if the "
+"date is available again."
+
+#: booking/templates/booking/book.html:52
+#: booking/templates/booking/book.html:109
+msgid "Auf Warteliste setzen"
+msgstr "Request notification when the date is available again"
+
+#: booking/templates/booking/book.html:63
+msgid "Die Dauer Ihrer Buchung beträgt: "
+msgstr "Duration of your booking: "
+
+#: booking/templates/booking/book.html:67
+msgid "Bitte wählen Sie das gewünschte Zeitfenster Ihrer Buchung:"
+msgstr "Please choose a free timeframe:"
+
+#: booking/templates/booking/book.html:85
+msgid "Diese Zeitfenster sind leider nicht mehr verfügbar:"
+msgstr "The following timeframes are not bookable anymore:"
+
+#: booking/templates/booking/book.html:104
+msgid "Gewünschter Termin nicht dabei?"
+msgstr "Is your prefered date not available?"
+
+#: booking/templates/booking/book.html:105
+msgid ""
+"Sie können sich in die Warteliste eintragen, um eine Benachrichtigung zu "
+"erhalten, sobald ein Termin frei geworden ist. "
+msgstr "Request notification when the date is available again."
+
+#: booking/templates/booking/book.html:115
+msgid "Wir können leider kein freies Zeitfenster zu Ihren Angaben finden."
+msgstr "We could not find a suitable time frame."
+
+#: booking/templates/booking/book.html:122
+msgid "Bitte melden Sie sich an um den Raum zu buchen"
+msgstr "Before you can book a room, please login first."
+
+#: booking/templates/booking/book.html:123
+msgid "Anmelden"
+msgstr "Login"
+
+#: booking/templates/booking/book.html:124
+msgid "Sie haben noch keinen Account?"
+msgstr "Don't have an account yet?"
+
+#: booking/templates/booking/book.html:125
+msgid "Registrieren"
+msgstr "Register"
+
+#: booking/templates/booking/book_confirm.html:6
+msgid "Vielen Dank für Ihre Buchung."
+msgstr "Thanks for your booking"
+
+#: booking/templates/booking/book_confirm.html:11
+msgid " Sie erhalten Ihre Buchungsbestätigung per E-Mail an: "
+msgstr " You will get a confirmation E-mail to:"
+
+#: booking/templates/booking/book_confirm.html:12
+msgid "Ihre Buchung ist unter"
+msgstr " You can have a look at your bookings at the"
+
+#: booking/templates/booking/book_confirm.html:12
+msgid "Mein Account"
+msgstr "My Account"
+
+#: booking/templates/booking/book_confirm.html:12
+msgid "einsehbar"
+msgstr "page"
+
+#: booking/templates/booking/book_confirm.html:13
+msgid " Bei weiteren Fragen wenden Sie sich bitte an:"
+msgstr " If you have further questions, please contact: "
+
+#: booking/templates/booking/event.html:46
+msgid "Kalender"
+msgstr "Calender"
+
+#: booking/templates/booking/event.html:56
+#: booking/templates/booking/event.html:73
+msgid "Absenden"
+msgstr "Submit"
+
+#: booking/templates/booking/event.html:60
+msgid "Preisberechnung"
+msgstr "Calculate price"
+
+#: booking/templates/booking/event.html:61
+msgid " Bitte füllen Sie das Formular vollständig aus "
+msgstr "Please fill out the complete form "
+
+#: booking/templates/booking/event.html:62
+msgid " Um die Buchung abzuschließen, berechnen Sie bitte zuerst den Preis. "
+msgstr "To finish the booking process, please calculate the price first."
+
+#: booking/templates/booking/event.html:65
+msgid " Bitte beachten Sie, dass eine Kaution im Wert von  "
+msgstr " Please keep in mind that a deposit of "
+
+#: booking/templates/booking/event.html:66
+msgid " hinterlegt werden muss.  "
+msgstr " has to be paid."
+
+#: booking/templates/booking/event.html:67
+msgid " Der Preis Ihrer Buchung beträgt: "
+msgstr " Price of your booking: "
+
+#: booking/templates/booking/event.html:71
+msgid ""
+" Wenn Sie mit der Buchung fortfahren möchten, drücken Sie auf Absenden. Sie "
+"können noch bis 5 Tage vor dem gebuchten Datum die Buchung kostenfrei "
+"stornieren. "
+msgstr ""
+" If you like to continue the booking process, click on submit. You can "
+"cancel your booking until 5 day before the booking without any extra costs."
+
+#: booking/templates/booking/waiting_list_addition.html:6
+msgid " Sie wurden auf die Warteliste gesetzt! "
+msgstr " You are now on the waiting list! "
+
+#: booking/templates/booking/waiting_list_addition.html:11
+msgid ""
+" Sie wurden auf die Warteliste gesetzt. Sobald eine Buchung an für diesen "
+"Tag storniert wird, werden wir Sie per Mail darüber informieren. "
+msgstr ""
+"You are now on the waiting list. If someone cancels this booking, you will "
+"get an e-mail."
+
+#: booking/templates/booking/waiting_list_addition.html:12
+#, fuzzy
+#| msgid " Bei weiteren Fragen wenden Sie sich bitte an:"
+msgid " Bei weiteren Fragen wenden Sie sich bitte an: "
+msgstr " If you have further questions, please contact: "
+
+#~ msgid "Beginn:"
+#~ msgstr "Start:"
+
+#~ msgid "Status"
+#~ msgstr "state"
+
+#~ msgid "End Zeit"
+#~ msgstr "End time"
+
+#~ msgid "Hoch"
+#~ msgstr "High"
+
+#~ msgid "Mittel"
+#~ msgstr "middle"
+
+#~ msgid "Gering"
+#~ msgstr "low"
+
+#~ msgid "nächster Monat"
+#~ msgstr "last month"
+
+#~ msgid "Berechne Preis"
+#~ msgstr "Calculate price"
+
+#~ msgid "Keine Zeiten."
+#~ msgstr "No times available"

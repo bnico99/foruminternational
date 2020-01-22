@@ -1,0 +1,15 @@
+{% if customer.title == 'Herr' %}
+Sehr geehrter Herr {{ customer.last_name }},
+{% else %}
+Sehr geehrte Frau {{ customer.last_name }},
+{% endif %}
+
+Wir haben gute Nachrichten für Sie: es ist ein Termin beim FORUM International für den {{ date }} frei geworden!
+Sie können diesen nun auf unserer Webseite buchen.
+
+Bitte beachten Sie, dass diese E-Mail an alle Kunden geschickt wird, welche sich für dieses Datum in die Warteliste eingetragen haben,
+somit können wir nicht gerantieren, dass der Termin lange frei bleibt.
+
+
+Mit freundlichen Grüßen,
+das FORUM International-Team

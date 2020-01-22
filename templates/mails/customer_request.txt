@@ -1,0 +1,18 @@
+{% if customer.title == 'Herr' %}
+Sehr geehrter Herr {{ customer.last_name }},
+{% else %}
+Sehr geehrte Frau {{ customer.last_name }},
+{% endif %}
+
+herzlichen Dank für Ihre Buchungsanfrage des FORUM International.
+Bitte beachten Sie, dass dies noch keine Bestätigung für eine verbindliche Buchung darstellt.
+Sie erhalten nach der Bearbeitung durch einen unserer Mitarbeiter eine weitere Nachricht, erst dann ist der Raum verbindlich gebucht.
+
+Hier sind noch einmal Ihre wichtigsten Buchungsinformationen auf einen Blick:
+
+Beginn: {{ start_datetime }}
+Ende: {{ end_datetime }}
+Anlass: {{ occasion }}
+
+Mit freundlichen Grüßen,
+das FORUM International-Team

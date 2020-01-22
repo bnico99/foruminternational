@@ -1,0 +1,22 @@
+Lieber Admin,
+
+das FORUM International wurde gerade gebucht.
+
+Hier sind die wichtigsten Buchungsinformationen auf einen Blick:
+
+Kunde:
+
+Vorname: {{ customer.first_name }}
+Nachname: {{ customer.last_name }}
+E-Mail: {{ customer.email }}
+Geburtsdatum: {{ customer.date_of_birth }}
+Student Uds/HTW: {{ student }}
+
+Buchung:
+
+Beginn: {{ start_datetime }}
+Ende: {{ end_datetime }}
+Anlass: {{ occasion }}
+
+Liebe Grüße,
+FORUM International-Team

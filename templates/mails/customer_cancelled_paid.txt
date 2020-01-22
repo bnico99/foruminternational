@@ -1,0 +1,14 @@
+{% if customer.title == 'Herr' %}
+Sehr geehrter Herr {{ customer.last_name }},
+{% else %}
+Sehr geehrte Frau {{ customer.last_name }},
+{% endif %}
+
+Ihre Buchung des FORUM International von {{ start_datetime }} bis {{ end_datetime }} wurde erfolgreich storniert.
+
+Bitte beachten Sie, dass trotzdem der volle Buchungspreis anfällt und nicht zurückerstattet werden kann, da die vertraglich vereinbarte Stornierungsfrist bereits abgelaufen ist.
+
+Falls Sie die Kaution bereits bezahlt haben sollten oder die Schlüsselübergabe bereits stattgefunden haben sollte, so werden wir Sie diesbezüglich innerhalb weniger Tage kontaktieren.
+
+Mit freundlichen Grüßen,
+das FORUM International-Team

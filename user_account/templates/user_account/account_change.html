@@ -1,0 +1,17 @@
+{% extends 'base_layout.html' %}
+{% load i18n %}
+
+
+{% block content %}
+    <h1 style="text-align:center;"> {% blocktrans %} Ihr Account wurde erfolgreich geändert {% endblocktrans %}</h1>
+
+    <br>
+    <div style="text-align: center;">
+        <div style="display: inline-block; text-align: left;">
+            {% blocktrans %} Ihr Account wurde erfolgreich verändert{% endblocktrans %}<br>
+            {% blocktrans %}Bei weiteren Fragen wenden Sie sich bitte an: {% endblocktrans %} <a href="mailto:info@example.com">info@example.com</a>.
+            {% blocktrans %}Hier gehts zurück: {% endblocktrans %} <a href="{% url 'myaccount_edit' %}"> Mein Account </a>  <br>
+        </div>
+    </div>
+
+{% endblock %}

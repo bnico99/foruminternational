@@ -1,0 +1,11 @@
+Lieber Tutor,
+
+das FORUM International wurde von {{ start_datetime }} bis {{ end_datetime }} gebucht.
+
+Bitte arrangiere die Schlüsselübergabe mit dem Kunden:
+Vorname: {{ customer.first_name }}
+Nachname: {{ customer.last_name }}
+E-Mail: {{ customer.email }}
+
+Liebe Grüße,
+FORUM International-Team

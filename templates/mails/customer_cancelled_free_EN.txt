@@ -1,0 +1,12 @@
+{% if customer.title == 'Herr' %}
+Dear Mr. {{ customer.last_name }},
+{% else %}
+Dear Mrs. {{ customer.last_name }},
+{% endif %}
+
+Your booking at FORUM International with the start time {{ start_datetime }} and end time  {{ end_datetime }} is cancelled.
+
+If you already paid the deposit or the rent or already have the key, we will contact you soon.
+
+Kind regards,
+das FORUM International-Team

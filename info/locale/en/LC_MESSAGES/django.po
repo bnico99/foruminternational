@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-21 21:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: info/templates/info/detail.html:3
+msgid "Frage:"
+msgstr "Question:"
+
+#: info/templates/info/detail.html:6
+msgid "Antwort:"
+msgstr "Answer:"
+
+#: info/templates/info/faq.html:14
+msgid "Keine Fragen."
+msgstr "No questions."
+
+#: info/templates/info/faq.html:24
+msgid ""
+" Sind Sie sich sicher, dass Sie eine Besichtigung anfragen möchten? Wir "
+"werden uns dann per Mail mit Ihnen in Verbindung setzen."
+msgstr ""
+" Are you sure you want to visit the room?  If you click on the Yes-Button, "
+"the person responsible will contact you as soon as possible."
+
+#: info/templates/info/faq.html:26
+msgid "JA"
+msgstr "Yes"
+
+#: info/templates/info/faq.html:27
+msgid "Abbrechen"
+msgstr "Quit"
+
+#: info/templates/info/faq.html:29
+msgid " Möchten Sie einen Termin zur Raumbesichtigung vereinbaren? "
+msgstr "Would you like to visit the room first?"
+
+#: info/templates/info/faq.html:30
+msgid "Besichtigungstermin anfragen"
+msgstr "Request a date to visit the room"
+
+#: info/templates/info/faq.html:37
+msgid ""
+"Unter der Woche stehen Ihnen folgende Möglichkeiten zur Verfügung. Alle "
+"Preise sind in Euro gegeben."
+msgstr ""
+"During the week, you have the following booking options. Prices are given in "
+"Euros."
+
+#: info/templates/info/faq.html:40 info/templates/info/faq.html:92
+msgid "Dauer"
+msgstr "Duration"
+
+#: info/templates/info/faq.html:41
+msgid "Unter der Woche (Mo, Di, Mi, Do, Fr)"
+msgstr "During the week (Mo, Tu, We, Th, Fr)"
+
+#: info/templates/info/faq.html:48 info/templates/info/faq.html:100
+msgid "Student"
+msgstr "student"
+
+#: info/templates/info/faq.html:49 info/templates/info/faq.html:101
+msgid "kein Student"
+msgstr "no student"
+
+#: info/templates/info/faq.html:55 info/templates/info/faq.html:57
+msgid "unter 50"
+msgstr "under 50"
+
+#: info/templates/info/faq.html:56 info/templates/info/faq.html:58
+msgid "über 50"
+msgstr "over 50"
+
+#: info/templates/info/faq.html:62
+msgid "bis 3 Stunden"
+msgstr "3 hours"
+
+#: info/templates/info/faq.html:70
+msgid "bis 6 Stunden"
+msgstr "6 hours"
+
+#: info/templates/info/faq.html:78 info/templates/info/faq.html:106
+msgid "bis 12 Stunden"
+msgstr "12 hours"
+
+#: info/templates/info/faq.html:89
+msgid ""
+"Am Wochenende stehen Ihnen folgende Möglichkeiten zur Verfügung. Alle Preise "
+"sind in Euro gegeben."
+msgstr ""
+"On weekends, you have the following booking options. Prices are given in "
+"Euros."
+
+#: info/templates/info/faq.html:93
+msgid "Am Wochenende (Sa, So)"
+msgstr "On weekends (Sa, Su)"
+
+#: info/templates/info/faq.html:113
+msgid "bis 24 Stunden"
+msgstr "24 hours"
+
+#: info/templates/info/faq.html:123
+#, python-format
+msgid ""
+" Bitte beachten Sie, dass unter der Woche bei Buchungen, die nach 22 Uhr "
+"enden, zusätzlich %(t1)s € Reinigungsgebühr anfällt und dass am Wochenende "
+"grundsätzlich eine Endreinigungsgebühr in Höhe von %(c1)s € (Student) bzw. "
+"%(c2)s € (sonst) anfällt. "
+msgstr ""
+"Please note that during the week, if you book the room longer than 10 pm  "
+"you have to pay  %(t1)s € extra as cleaning fees.  On weekends, if you are a "
+"student, you need to pay additional %(c1)s € for cleaning otherwise you need "
+"to pay  %(c2)s €."
+
+#: info/templates/info/home.html:4
+msgid "Willkommen beim FORUM international!"
+msgstr "Welcome to the FORUM international!"
+
+#: info/templates/info/index.html:3
+msgid "{{ home.title }}"
+msgstr ""
+
+#: info/templates/info/request_visit.html:6
+msgid " Besichtigung angefordert "
+msgstr " You requested to visit the room."
+
+#: info/templates/info/request_visit.html:11
+msgid ""
+" Sie haben eine Besichtigung angefragt. Wir werden uns in Kürze per Mail mit "
+"Ihnen in Verbindung setzen. "
+msgstr ""
+"You requested to visit the room. We will write you an e-mail as soon as "
+"possible."
+
+#: info/templates/info/request_visit.html:12
+msgid " Bei weiteren Fragen wenden Sie sich bitte an: "
+msgstr " If you have any further questions, please write an E-mail to: "
+
+#: info/templates/info/request_visit.html:13
+msgid " Hier gehts zurück:"
+msgstr " You can get back to the faq page here:"
+
+#~ msgid "Unter der Woche"
+#~ msgstr "during the week"

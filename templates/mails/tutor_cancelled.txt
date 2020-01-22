@@ -1,0 +1,8 @@
+Lieber Tutor,
+
+die Buchung des FORUM International von {{ start_datetime }} bis {{ end_datetime }} wurde storniert.
+
+Es ist also keine Schlüsselübergabe mehr notwendig.
+
+Liebe Grüße,
+FORUM International-Team
